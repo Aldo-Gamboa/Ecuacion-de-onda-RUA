@@ -14,16 +14,17 @@ Material didáctico complementario del trabajo titulado "Resolución de la ecuac
 Principalmente hay que elegir si estamos en el caso con α = 1 y β = 0 (sys = 0) o no (sys = 1), debemos elegir el dominio espacial y temporal con el que trabajaremos, y debemos escoger el número de divisiones N de nuestro dominio espacial, el cual determinará la resolución ∆x y ∆t a través del factor de CFL. Los parámetros 'N' y 'res' serán particularmente importantes para correr este código (ver paso 3).
 
 2. Ejecutar en la terminal el siguiente comando:
+
 	../Fuente$ source compile_and_run.txt
+	
 Se nos generarán archivos con formato txt en los cuáles estará la solución numérica del sistema para los parámetros escogidos. Estos archivos se guardarán automáticamente dentro del directorio 'Files'.
 
-3. Para llevar a cabo el análisis de errores este código está diseñado para ser ejecutado manualmente tres veces (con tres resoluciones distintas). Primero, debemos correr el código (paso 2) con un cierto valor de N (en nuestro trabajo escrito tomamos N = 500), el cual estará asociado a
-la primera resolución etiquetada como res = 1. Luego, volveremos a correr el código (paso 2, nuevamente) pero aumentando al doble la N (en nuestro ejemplo cambiamos a N = 1000) y cambiando el valor de la variable res a res = 2. Por último, volvemos a doblar el valor de N (en nuestro ejemplo cambiamos a N = 2000), cambiamos a res = 4, y corremos el código (paso 2, nuevamente). 
-Es importante realizar así este proceso pues se generarán archivos de texto etiquetados con las resoluciones, que posteriormente serán utilizados por el script animations.py.
-De esta manera, si ya se tienen los intervalos espacial y temporal fijos, y ya se ha decidido si trabajar con sys = 0 ó sys = 1, entonces lo único que resta hacer es cambiar manualmente el valor de N y de res, y ejecutar el código para tres elecciones de N y res.
+3. Para llevar a cabo el análisis de errores este código está diseñado para ser ejecutado manualmente tres veces (con tres resoluciones distintas). Primero, debemos correr el código (paso 2) con un cierto valor de N (en nuestro trabajo escrito tomamos N = 500), el cual estará asociado a la primera resolución etiquetada como res = 1. Luego, volveremos a correr el código (paso 2, nuevamente) pero aumentando al doble la N (en nuestro ejemplo cambiamos a N = 1000) y cambiando el valor de la variable res a res = 2. Por último, volvemos a doblar el valor de N (en nuestro ejemplo cambiamos a N = 2000), cambiamos a res = 4, y corremos el código (paso 2, nuevamente). Es importante realizar así este proceso pues se generarán archivos de texto etiquetados con las resoluciones, que posteriormente serán utilizados por el script animations.py. De esta manera, si ya se tienen los intervalos espacial y temporal fijos, y ya se ha decidido si trabajar con sys = 0 ó sys = 1, entonces lo único que resta hacer es cambiar manualmente el valor de N y de res, y ejecutar el código para tres elecciones de N y res.
 
 4. Una vez obtenidos los datos para tres resoluciones distintas, ejecutar en la terminal el siguiente comando para obtener las animaciones:
+
 	../Fuente$ python3 animations.py
+	
 En este caso, no hay necesidad de modificar nada, pues ya este script de Python ya está automatizado para recibir los archivos de texto generados con el programa escrito en C.
 
 5. ¡Listo! Si desea ver más configuraciones, se invita al lector a modificar los parámetros y/o el código.
@@ -31,9 +32,7 @@ En este caso, no hay necesidad de modificar nada, pues ya este script de Python 
 NOTA: En caso de que se trabaje en otro sistema operativo distinto a Linux, se tendría que investigar la manera de compilar el archivo main con todos los scripts ocupados, y posteriormente ejecutarlo.
 
 
-###############################################################################################
-
- Descripción general de los archivos contenidos en el directorio 'Fuente'.
+## Descripción general de los archivos contenidos en el directorio 'Fuente'.
 
 * El directorio 'Files' sirve para almacenar los datos que se generan con el código. Este directorio debe existir, pues de otra manera el código no tendrá en dónde almacenar los datos y arrojará un error. Si no existe, será creado por el archivo 'compile_and_run.txt'.
 
@@ -43,10 +42,7 @@ NOTA: En caso de que se trabaje en otro sistema operativo distinto a Linux, se t
 
 * El archivo 'compile_and_run.txt' contiene los comandos necesarios para que la terminal de Linux integre los archivos con extensión '.c' y '.h' en un solo archivo ejecutable llamado 'exe', y también contiene el comando para ejecutar dicho archivo 'exe'. Todo esto se realiza al escribir el comando 'source compile_and_run.txt' en la terminal, como se indicó anteriormente en este readme.
 
-
-###############################################################################################
-
-Descripción breve de cada archivo.
+## Descripción breve de cada archivo.
 
 * El archivo 'animations.py' es el script escrito en lenguaje Python, cuya función es graficar los datos generados por el código en C, y hacer el análisis de autoconvergencia con dichos datos.
 
