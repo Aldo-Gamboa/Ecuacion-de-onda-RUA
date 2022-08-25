@@ -7,9 +7,8 @@ Material didáctico complementario del trabajo titulado "Resolución de la ecuac
  Última modificación: 25 de agosto de 2022.
 
 
-###############################################################################################
 
- Instrucciones para correr el código en una terminal de Linux.
+## Instrucciones para correr el código en una terminal de Linux.
 
 1. Seleccionar los parámetros deseados en el archivo 'parameters.c'. En dicho archivo hay una descripción de los parámetros disponibles. 
 Principalmente hay que elegir si estamos en el caso con α = 1 y β = 0 (sys = 0) o no (sys = 1), debemos elegir el dominio espacial y temporal con el que trabajaremos, y debemos escoger el número de divisiones N de nuestro dominio espacial, el cual determinará la resolución ∆x y ∆t a través del factor de CFL. Los parámetros 'N' y 'res' serán particularmente importantes para correr este código (ver paso 3).
