@@ -25,7 +25,7 @@ Principalmente hay que elegir si estamos en el caso con α = 1 y β = 0 (sys = 0
 
 	../Fuente$ python3 animations.py
 	
-En este caso, no hay necesidad de modificar nada, pues ya este script de Python ya está automatizado para recibir los archivos de texto generados con el programa escrito en C.
+	En este caso, no hay necesidad de modificar nada, pues ya este script de Python ya está automatizado para recibir los archivos de texto generados con el programa escrito en C.
 
 5. ¡Listo! Si desea ver más configuraciones, se invita al lector a modificar los parámetros y/o el código.
 
