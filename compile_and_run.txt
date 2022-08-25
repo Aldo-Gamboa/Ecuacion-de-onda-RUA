@@ -1,0 +1,21 @@
+#Comandos para crear 'objetos' a partir del archivo main y los archivos auxiliares,
+#y para hacer un solo archivo ejecutable.
+
+
+#Primero creamos el directorio 'Files' en el que se guardarán los datos generados:
+
+mkdir -p Files
+
+
+#En el siguiente comando se integran todos los archivos auxiliares empleados,
+#y se crea el archivo ejecutable 'exe'
+
+gcc -o exe main.c parameters.c evolution.c analytic.c initial.c tx_arrays.c boundary.c time_integrators.c finite_differences.c mathematica.c -lm  
+
+
+#El siguiente comando ejecuta el programa
+./exe
+
+#Finalmente, para ejecutar este archivo de texto, en la terminal
+# (Linux) escribimos:
+#    source compile_and_run.txt
