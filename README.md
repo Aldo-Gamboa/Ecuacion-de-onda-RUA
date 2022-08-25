@@ -17,7 +17,7 @@ Principalmente hay que elegir si estamos en el caso con α = 1 y β = 0 (sys = 0
 
 	../Fuente$ source compile_and_run.txt
 	
-Se nos generarán archivos con formato txt en los cuáles estará la solución numérica del sistema para los parámetros escogidos. Estos archivos se guardarán automáticamente dentro del directorio 'Files'.
+	Se nos generarán archivos con formato txt en los cuáles estará la solución numérica del sistema para los parámetros 	escogidos. Estos archivos se guardarán automáticamente dentro del directorio 'Files'.
 
 3. Para llevar a cabo el análisis de errores este código está diseñado para ser ejecutado manualmente tres veces (con tres resoluciones distintas). Primero, debemos correr el código (paso 2) con un cierto valor de N (en nuestro trabajo escrito tomamos N = 500), el cual estará asociado a la primera resolución etiquetada como res = 1. Luego, volveremos a correr el código (paso 2, nuevamente) pero aumentando al doble la N (en nuestro ejemplo cambiamos a N = 1000) y cambiando el valor de la variable res a res = 2. Por último, volvemos a doblar el valor de N (en nuestro ejemplo cambiamos a N = 2000), cambiamos a res = 4, y corremos el código (paso 2, nuevamente). Es importante realizar así este proceso pues se generarán archivos de texto etiquetados con las resoluciones, que posteriormente serán utilizados por el script animations.py. De esta manera, si ya se tienen los intervalos espacial y temporal fijos, y ya se ha decidido si trabajar con sys = 0 ó sys = 1, entonces lo único que resta hacer es cambiar manualmente el valor de N y de res, y ejecutar el código para tres elecciones de N y res.
 
