@@ -29,7 +29,7 @@ Principalmente hay que elegir si estamos en el caso con α = 1 y β = 0 (sys = 0
 
 5. ¡Listo! Si desea ver más configuraciones, se invita al lector a modificar los parámetros y/o el código.
 
-NOTA: En caso de que se trabaje en otro sistema operativo distinto a Linux, se tendría que investigar la manera de compilar el archivo main con todos los scripts ocupados, y posteriormente ejecutarlo.
+**NOTA:** En caso de que se trabaje en otro sistema operativo distinto a Linux, se tendría que investigar la manera de compilar el archivo main con todos los scripts ocupados, y posteriormente ejecutarlo.
 
 
 ## Descripción general de los archivos contenidos en el directorio 'Fuente'.
