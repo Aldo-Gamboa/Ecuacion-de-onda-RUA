@@ -47,7 +47,9 @@ Principalmente hay que elegir si estamos en el caso con α = 1 y β = 0 (sys = 0
 
 ## Descripción breve de cada archivo.
 
-* El archivo 'animations.py' es el script escrito en lenguaje Python, cuya función es graficar los datos generados por el código en C, y hacer el análisis de autoconvergencia con dichos datos.
+* El archivo 'animations.py' es un script escrito en lenguaje Python, cuya función es graficar los datos generados por el código en C, y hacer el análisis de autoconvergencia con dichos datos.
+
+* El archivo 'instantaneas.py' es un script escrito en lenguaje Python con el cual se pueden obtener las mismas gráficas mostradas en el artículo .
 
 * El archivo 'main.c' es el script principal en el cual está contenido el método de resolución numérico empleado. Este archivo invoca a los distintos scripts conforme se va ejecutando y, de manera general, posee el siguiente flujo de acciones:
 	1. Inicializa parámetros del problema.
