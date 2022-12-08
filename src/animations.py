@@ -143,11 +143,11 @@ elif(sys == 1):
 	i = 500
 	ti = i * dx_4 * 0.5
 	plt.plot(x_4, phi_4[0], label=r'$\phi_0(x)$')
-	plt.plot(x_4, phi_4[i], label=r'$\phi($t={0:.2f}$ s, x)$'.format(ti))
+	plt.plot(x_4, phi_4[i], label=r'$\phi($t={0:.2f}$, x)$'.format(ti))
 	
 	i = 1200
 	ti = i * dx_4 * 0.5
-	plt.plot(x_4, phi_4[i], label=r'$\phi($t={0:.2f}$ s, x)$'.format(ti))
+	plt.plot(x_4, phi_4[i], label=r'$\phi($t={0:.2f}$, x)$'.format(ti))
 	
 	plt.xlabel(r'$x$')
 	plt.title(r'$\phi$ con $\Delta x={0:.3f}$'.format(dx_4))
